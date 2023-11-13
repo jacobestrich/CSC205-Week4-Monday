@@ -8,19 +8,20 @@ public class Main
         //B b = new B();
         StudentLogic();
 
-        Triangle triangle = new Triangle(100, 3);
-        double area = triangle.getArea();
-        System.out.println("Triangle Area: " + area);
+        // Triangle triangle = new Triangle(100, 3);
+        // double area = triangle.getArea();
+        // System.out.println("Triangle Area: " + area);
 
-        Circle circle = new Circle();
-        Rectangle rectangle = new Rectangle();
+        // Circle circle = new Circle();
+        // Rectangle rectangle = new Rectangle();
 
-        isShape(rectangle);
-        isShape(circle);
-        isShape(triangle);
-        isShape(null);
+        // isShape(rectangle);
+        // isShape(circle);
+        // isShape(triangle);
+        // isShape(null);
 
     }
+
 
     public static void isShape(Shape shape)
     {
@@ -38,6 +39,7 @@ public class Main
 
     public static void StudentLogic()
     {
+        System.out.println("Before Sort:");
         Student student1 = new Student("Jake", "Estrich");        
         Student student2 = new Student("Tom", "Dom");
         Student student3 = new Student("Chad", "Giga");
@@ -53,6 +55,9 @@ public class Main
         {
             student.PrintNames();
         }
+        students.sort(new StudentComparetor());
+        System.out.println("After sort completed");
+
     }
 
 

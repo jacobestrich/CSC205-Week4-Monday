@@ -1,6 +1,6 @@
 public class User 
 {
-    private String FirstName;
+    String FirstName;
     String LastName;
 
     public User(String FirstName, String LastName) 
