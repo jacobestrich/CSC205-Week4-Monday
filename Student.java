@@ -6,5 +6,4 @@ public class Student extends User
     {
         super(FirstName, LastName);
     }
-
 }
